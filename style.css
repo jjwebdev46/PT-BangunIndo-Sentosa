@@ -7,7 +7,7 @@ body {
 
 header {
   background-color: white;
-  height: 5vh;
+  /* height: 5vh; */
   display: flex;
   align-items: left;
   justify-content: left;
@@ -17,6 +17,17 @@ header {
   /* z-index: 1; */
 }
 
+.header-inner {
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  z-index: 100;
+}
+
+
 h1 {
   /* font-family: 'Coda Caption', sans-serif; */
   text-transform: uppercase;
@@ -25,8 +36,28 @@ h1 {
   /* text-shadow: #551755 20px 15px 20px; */
 }
 
-.rightSide {
+.row {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.logo {
+  float: left;
+}
+
+.logo p {
+  font-size: 20px;
+}
+
+.menu {
   float: right;
+  font-size: 20px;
+}
+
+.sub-menu {
+  padding-right: 12px;
+  text-decoration: none;
+  color: black;
 }
 
 #about_us, #projects, #services {
